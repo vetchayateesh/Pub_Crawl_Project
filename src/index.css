@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-secondary text-primary font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-md font-medium transition-all duration-300 inline-block;
+  }
+  
+  .btn-primary {
+    @apply bg-accent text-white hover:bg-accent-light;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-accent text-accent hover:bg-accent hover:text-white;
+  }
+  
+  .container-custom {
+    @apply container mx-auto px-4 md:px-8;
+  }
+  
+  .section {
+    @apply py-16 md:py-24;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12;
+  }
+  
+  .section-subtitle {
+    @apply text-xl md:text-2xl font-medium mb-4 text-accent;
+  }
+}
